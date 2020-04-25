@@ -1,0 +1,7 @@
+{
+  "name": "adventistas-cumbres",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
