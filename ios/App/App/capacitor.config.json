@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "adventistas-cumbres",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

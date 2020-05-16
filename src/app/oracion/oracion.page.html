@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white !important"></ion-menu-button>
+    </ion-buttons>
+    <strong>Oración</strong>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container" style="padding:15px">
+
+  	<div align="center">
+  		<p style="    font-weight: bold;font-size: 14px;color: #278B9E;">
+  			No tengas miedo, que yo estoy contigo; no te desanimes, que yo soy tu Dios. Y soy quien te da fuerzas, y siempre te ayudaré; siempre te sostendré con mi justiciera mano derecha (Isaías 41:10)
+  		</p>
+  	</div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="alertPetition()" expand="block" size="small">Peticion</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="alertGrateful()" expand="block" size="small">Agradecimiento</ion-button>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  	<div>
+  		<ion-list>
+  			<ion-item *ngFor="let pray of prays | async">
+          <ion-avatar slot="start">
+            <img *ngIf="pray.type === 'P'" src="assets/pray.png">
+            <img *ngIf="pray.type === 'A'" src="assets/grace.png">
+          </ion-avatar>
+          <ion-label>
+            <h3>{{pray.name}}</h3>
+            <p>{{pray.motive}}</p>
+          </ion-label>
+        </ion-item>
+  		</ion-list>
+  		
+  	</div>
+  </div>
+</ion-content>
+
+

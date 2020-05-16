@@ -1,0 +1,89 @@
+{
+"code":200,
+"noticias":[
+    {  
+   "nombre":"Culto Joven (12-15 años)",
+   "imgpromo":"https://cldup.com/LLVeRHH2y1.jpg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+},
+{  
+   "nombre":"Culto Joven (21-25 años)",
+   "imgpromo":"https://cldup.com/3jUk9RWOMx.jpg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+},
+{  
+   "nombre":"Culto Joven",
+   "imgpromo":"https://cldup.com/zxYLFQ5dOt.jpg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+},
+{  
+   "nombre":"Sociedad de Jóvenes",
+   "imgpromo":"https://cldup.com/xdz97r1uiB.jpg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+},
+    {  
+   "nombre":"Comunicado",
+   "imgpromo":"https://cldup.com/IWzciLV3Zj.jpeg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+},
+    {  
+   "nombre":"La resurreción y la vida",
+   "imgpromo":"https://cldup.com/mnRyGyF9bG.jpg",
+   "desc":"Próximamente",
+   "fechaIni":"-",
+   "fechaFin":"-",
+   "lugar":"Iglesia Adventista de Cumbres",
+   "horario":"-",
+   "link":"-",
+   "facebook":"-",
+   "phone":"-",
+   "organizador":"Adventistas Cumbres",
+   "precio":"Gratis"
+}
+	]
+}
