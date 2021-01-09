@@ -30,6 +30,21 @@ export class AppComponent implements OnInit {
       title: 'Oracion',
       url: '/oracion',
       icon: 'heart'
+    },
+    {
+      title: 'Meditaciones',
+      url: '/meditaciones',
+      icon: 'book'
+    },
+    {
+      title: 'En vivo',
+      url: '/envivo',
+      icon: 'logo-youtube'
+    },
+    {
+      title: 'Registro Asistencia',
+      url: '/registro-asistencia',
+      icon: 'walk'
     }
     // {
     //   title: 'Programa',

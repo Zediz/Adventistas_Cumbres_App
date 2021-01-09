@@ -1,0 +1,27 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar class="new-background-color">
+    
+    <ion-buttons slot="start">
+      <ion-button (click)="back()"><ion-icon name="chevron-back-outline" style="color:white !important" ></ion-icon></ion-button>
+    </ion-buttons>
+    <strong>Atras</strong>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="loading" align="center" style="position: relative;">
+  <ion-spinner name="crescent" class="loading"></ion-spinner>
+</ion-content>
+
+<ion-content *ngIf="!loading" >
+
+<iframe *ngIf="thereIsSound(post.content.rendered) && church" [src]="soundCloud" width="100%"></iframe>
+
+  
+  <div align="center" >
+    <h3>{{getTitle(post.title.rendered)}}</h3>
+    <img src="{{getImage(post.content.rendered)}}" alt="">
+  </div>
+  <div [innerHTML] ="getText(post.content.rendered)" style="padding-left: 20px; padding-right: 20px;">
+
+  </div>4
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white !important"></ion-menu-button>
+    </ion-buttons>
+    <ion-title><ion-icon name="logo-youtube"></ion-icon>En vivo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col align="center">
+        <label for="">Video title</label>
+        <h3>{{videoData.title}}</h3>
+        <p>{{videoData.subtitle}}</p>
+        <div [innerHTML]="videoData.message">
+          
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+</ion-content>

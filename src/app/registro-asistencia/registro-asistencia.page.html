@@ -1,0 +1,156 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white !important"></ion-menu-button>
+    </ion-buttons>
+    <ion-title><ion-icon name="walk"></ion-icon> Registro de asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+  
+    <ion-row class="recomendaciones">
+      <ion-col align="center">
+        <h5 class="titles">Recomendaciones</h5>
+        <ion-slides pager="true" class="slide-cards" *ngIf="church">
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/001.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/002.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/003.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/004.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/005.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/006.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/007.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/008.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/009.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/010.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/011.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/012.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/013.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/014.jpg">
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <img src="assets/slides_nueva_normalidad/015.jpg">
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+        
+      </ion-col>
+    </ion-row>
+    <!--<ion-row class="text-reg">
+      <ion-col align="left" >
+        <h3 class="titles">Registro</h3>
+        <p class="rec-text">Por fin regresaremos a la iglesia. Por el momento solo se permiten reuniones con un máximo de 50 asistentes. Regístrate aquí.</p>
+        <strong class="asistentes">Lugares disponibles: #{{50 - cantidadAsistentes}}</strong>
+      </ion-col>
+    </ion-row>
+    <ion-row class="registro" *ngIf="cantidadAsistentes < 50">
+      <ion-col align="center">
+        
+        <ion-item>
+          <ion-label position="floating">Nombre y Apellido</ion-label>
+          <ion-input [(ngModel)]="registro.name" size="small"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input #emailInput inputmode="email" size="small" [(ngModel)]="registro.email" (ionChange)="emailInput.color=''"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Celular</ion-label>
+          <ion-input inputmode="tel" type="number" size="small" [(ngModel)]="registro.phone"></ion-input>
+        </ion-item>
+        <p class="personas-text">
+          <ion-text color="primary">{{personasLabel()}}</ion-text>
+        </p>
+        
+        <ion-range min="1" max="6" step="1" value="1" [(ngModel)]="registro.amountPeople" snaps color="primary">
+          <ion-icon slot="start" size="small" color="primary" name="person"></ion-icon>
+          <ion-icon slot="end" color="primary" name="people"></ion-icon>
+        </ion-range>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="cantidadAsistentes < 50">
+      <ion-col>
+        <ion-button (click)="enviar_registro()" expand="block" fill="solid" shape="round">
+          Enviar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="cantidadAsistentes >= 50 && !lastRegistered">
+      <ion-col align="center">
+        <h1 style="margin-bottom: 0px;"><ion-text style="font-size: 70px; " color="danger"><ion-icon name="hand-right-outline"></ion-icon></ion-text></h1>
+        <h2 style="margin-top: 0px;"><ion-text color="danger">  Lo sentimos...</ion-text></h2>
+        <p style="font-size:14px"><ion-text color="medium">Ya hay 50 personas registradas para este sábado. Intenta registrarte nuevamente el próximo domingo.</ion-text></p>
+      </ion-col>
+    </ion-row>-->
+
+    <ion-row class="text-reg">
+      <ion-col align="left" >
+        <h3 class="titles">Registro para participantes</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row class="registro" *ngIf="cantidadAsistentes < 50">
+      <ion-col align="center">
+        <ion-button color="primary">Registro de participantes / Staff</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'meditaciones',
+    loadChildren: () => import('./meditaciones/meditaciones.module').then( m => m.MeditacionesPageModule)
+  },
+  {
+    path: 'meditacion/:postId',
+    loadChildren: () => import('./meditacion/meditacion.module').then( m => m.MeditacionPageModule)
+  },
+  {
+    path: 'registro-asistencia',
+    loadChildren: () => import('./registro-asistencia/registro-asistencia.module').then( m => m.RegistroAsistenciaPageModule)
+  },
+  {
+    path: 'envivo',
+    loadChildren: () => import('./envivo/envivo.module').then( m => m.EnvivoPageModule)
   }
 
 

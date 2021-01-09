@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start" *ngIf="selectedCategory == 0">
+      <ion-menu-button style="color:white !important"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start" *ngIf="selectedCategory != 0">
+      <ion-button (click)="backToCategorys()"><ion-icon name="chevron-back-outline" style="color:white !important" ></ion-icon></ion-button>
+    </ion-buttons>
+    <strong>{{categoryName}}</strong>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="loading" align="center" style="position: relative;">
+  <ion-spinner name="crescent" class="loading"></ion-spinner>
+</ion-content>
+
+<ion-content [fullscreen]="true" *ngIf="selectedCategory != 0 && !loading">
+  <ion-card *ngFor="let meditacion of meditaciones" (click)="goToPost(meditacion.id)">
+    <div align="center">
+      <img src="{{getImage(meditacion.content.rendered)}}" />
+    </div>
+    
+    <ion-card-header>
+      <ion-card-subtitle>{{ meditacion.date | date :  "dd - MM - y" }}</ion-card-subtitle>
+      <ion-card-title style="font-size: 18px;">{{meditacion.title.rendered}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="font-size: 10px;">
+      {{getExcerpt(meditacion.excerpt.rendered)}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-content *ngIf="selectedCategory == 0 && !loading" >
+  <ion-card *ngFor="let categoria of categorias" (click)="selectCategory(categoria.id, categoria.subtitle)">
+    <div align="center">
+      <img src="{{categoria.image}}"  height="200"/>
+    </div>
+    
+    <ion-card-header>
+      <ion-card-subtitle>{{ categoria.subtitle}}</ion-card-subtitle>
+      <ion-card-title style="font-size: 18px;">{{categoria.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="font-size: 10px;">
+      {{categoria.descripcion}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
