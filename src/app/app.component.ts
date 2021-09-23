@@ -45,12 +45,12 @@ export class AppComponent implements OnInit {
       title: 'Registro Asistencia',
       url: '/registro-asistencia',
       icon: 'walk'
+    },
+    {
+      title: 'Admin',
+      url: '/admin',
+      icon: 'cog'
     }
-    // {
-    //   title: 'Programa',
-    //   url: '/folder/Archived',
-    //   icon: 'time'
-    // }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 

@@ -36,7 +36,7 @@ export class EnvivoPage implements OnInit {
       console.log("Si se cambio en web");
       data.map((vid: Video) =>{
         this.videoData = vid;
-        //console.log(vid.title);
+        console.log(vid);
         this.playVideo();
       })
     });
